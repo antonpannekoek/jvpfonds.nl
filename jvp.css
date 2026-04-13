@@ -76,3 +76,10 @@ address {
 .tooltip {
   cursor: pointer;
 }
+
+hr {
+    width: 50%;
+    margin-left: 0;
+    margin-top: 4rex;
+    margin-bottom: 2rex;
+}
