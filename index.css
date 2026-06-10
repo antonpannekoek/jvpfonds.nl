@@ -14,6 +14,7 @@ h1,
 h2,
 h3 {
     padding-top: 1em;
+    line-height: 1.3em;
 }
 
 a {
@@ -82,4 +83,51 @@ hr {
     margin-left: 0;
     margin-top: 4rex;
     margin-bottom: 2rex;
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    display: inline;
+    font-weight: bold;
+}
+
+dt .name {
+    font-weight: inherit;
+}
+
+dt .presentation {
+    font-weight: normal;
+}
+
+dt .presentation::before {
+    content: " (";
+}
+
+dt .presentation::after {
+    content: ")";
+}
+
+dt::after {
+    content: " – ";
+    font-weight: normal;
+}
+
+dd {
+    display: inline;
+    margin: 0;
+}
+
+dd::after {
+    content: "\A";
+    white-space: pre;
+}
+
+img.fullwidth {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
 }
