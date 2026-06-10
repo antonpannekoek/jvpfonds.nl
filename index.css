@@ -1,13 +1,29 @@
-body {
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 1.5em;
-  color: #333;
-  background-color: #f9f9f9;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  margin: 0 auto;
-  padding: 2em;
+html {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1a1a1a;
+  background: #f9f7f4;
+  line-height: 1.75;
+
   max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+main, body > * {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1,
@@ -16,6 +32,34 @@ h3 {
     padding-top: 1em;
     line-height: 1.3em;
 }
+
+h1 {
+  font-size: 1.65rem;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  color: #111;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 0.4rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #333;
+  margin-top: 2.5rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
 
 a {
   text-decoration: none;
@@ -31,21 +75,30 @@ a:visited {
 a:focus {
 }
 
-a:hover {
-  color: #d00;
-}
-
 a:active {
   color: #0ff;
 }
 
+a {
+  color: #1a4a8a;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  border-bottom-color: #1a4a8a;
+}
+
+
 address {
-  font-family: Monaco, Courier, monospace;
+    font-family: Monaco, Courier, monospace;
   font-size: 15px;
   font-style: normal;
   line-height: 1.3em;
 
   padding-left: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 #intro {
@@ -78,12 +131,13 @@ address {
   cursor: pointer;
 }
 
+
 hr {
-    width: 50%;
-    margin-left: 0;
-    margin-top: 4rex;
-    margin-bottom: 2rex;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 3rem 0 1.5rem;
 }
+
 
 dl {
     margin: 0;
@@ -124,6 +178,11 @@ dd {
 dd::after {
     content: "\A";
     white-space: pre;
+}
+
+ul, ol {
+  padding-left: 1rem;
+
 }
 
 img.fullwidth {
