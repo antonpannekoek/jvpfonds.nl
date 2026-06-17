@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Lora";
+  src: url("./fonts/lora/static/Lora-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("./fonts/lora/static/Lora-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +26,7 @@ html {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Lora", Georgia, serif;
   color: #1a1a1a;
   background: #f9f7f4;
   line-height: 1.75;
@@ -47,7 +63,7 @@ h1 {
 h2 {
   font-size: 1.1rem;
   font-weight: bold;
-  text-transform: uppercase;
+  font-variant: small-caps;
   letter-spacing: 0.07em;
   color: #333;
   margin-top: 2.5rem;
